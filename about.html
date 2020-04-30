@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
 
+<html>
 <head>
   <meta charset="utf-8">
-  <title>Coronavirus Check</title>
+  <title>Baycro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
@@ -27,97 +28,100 @@
   <script src="vendor/jquery/jquery.ui.totop.js"></script>
   <script src="js/homepage.js"></script>
 
-
   <!-- Favicon -->
   <link rel='icon' href='img/icon.png' type='image/png' />
-
 </head>
 
+
 <body>
-  <header class="header">
-    <nav class="navbar navbar-expand-lg fixed-top py-3">
-      <div class="container"><a href="index.html" class="navbar-brand font-weight-bold text-dark">Coronavirus Check</a>
-        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-          class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-        <div id="navbarSupportedContent" class="collapse navbar-collapse">
-          <div class="navbar-nav ml-auto">
-            <a href="check.html" class="nav-item nav-link font-weight-bold">Check Exposure</a>
-            <a href="upload.html" class="nav-item nav-link font-weight-bold">Upload Data</a>
-            <a href="faq.html" class="nav-item nav-link font-weight-bold">FAQ</a>
-            <a href="about.html" class="nav-item nav-link font-weight-bold">About</a>
-            <a href="instructions.html" class="nav-item nav-link font-weight-bold">How to Use</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <section id="intro">
-    <div class="container">
-      <div class="row center">
-        <h2><strong>Our Story & Team</strong></h2>
-      </div>
-    </div>
-  </section>
-
-  <section id="maincontent">
-    <div class="container">
-      <h3>About</h3>
-      <p> Corona Check serves as a platform for the public that would allow individuals affected by the virus 
-        to upload their location data and members of the community to compare their own location to verify whether 
-        they have potentially been exposed to the virus. The user who has been positively tested with COVID-19 uploads 
-        their data, inputting the range in which they were sick and had symptoms. The web application would then display 
-        this location data on a map; in order to protect the privacy of the user, the application allows them to erase
-        areas they want to hide, such as their home address. Once the user is satisfied with their privacy, they enter 
-        the upload button. Their data then gets put into a MySQL database. Anonymous users can then acquire their own 
-        location history from google and load it into the website. The application will then check if they were in a nearby
-        radius of someone who has COVID-19. After their location history is compared, any intersection between the intereste
-        d member and a user infected with the virus will be shown with a marker dot, indicating how far the affected member 
-        was in the infection cycle. In order to maintain user privacy, individual metrics will not be shown. If the interested 
-        member learns that they have been exposed to the virus, they have an option to upload their data as well and can view
-        other pages of the website which inform what next steps to take, whether it be self-isolation or testing.</p>
-      <br>
-      
-    </div>
-  </section>
-  <br>
-  <br>
-  <section>
-    <div class="container">
-      <h3>Our Team</h3>
-
-      <div class="row">
-
-        <div class="span3 offset1">
-          <div class="team">
-            <img class="img-circle" src="img/team/ganesh.jpg" alt="" />
-            <h4>Ganesh Pimpale</h4>
-          </div>
-        </div>
-
-        <div class="span3">
-          <div class="team">
-            <img src="img/team/govind.jpg" alt="" />
-            <h4>Govind Pimpale</h4>
-          </div>
+<header class="header">
+  <nav class="navbar navbar-expand-lg fixed-top py-3">
+    <div class="container"><a href="index.html" class="navbar-brand font-weight-bold text-dark">Baycro</a>
+      <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+              class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <div class="navbar-nav ml-auto">
+          <a href="news.html" class="nav-item nav-link font-weight-bold">News</a>
+          <a href="donate.html" class="nav-item nav-link font-weight-bold">Donate</a>
+          <a href="join.html" class="nav-item nav-link font-weight-bold">Join</a>
+          <a href="sponsors.html" class="nav-item nav-link font-weight-bold">Sponsors</a>
+          <a href="gallery.html" class="nav-item nav-link font-weight-bold">Gallery</a>
+          <a href="faq.html" class="nav-item nav-link font-weight-bold">FAQ</a>
+          <a href="about.html" class="nav-item nav-link font-weight-bold">About</a>
         </div>
       </div>
     </div>
-    </div>
+  </nav>
+</header>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footerlogo">
-        <p style="padding-top: 10px;"><a href="termsofservice.html" style="color: inherit;">Terms of Service</a></p>
-        <p><a href="faq.html" style="color: inherit;">Frequently Asked Questions</a></p>
-        <p style="color: inherit; margin-bottom:-50px">Copyright © Innexgo LLC, All Rights Reserved.</p>
+
+<!-- Title -->
+<section id="intro">
+  <div class="container">
+    <div class="row center">
+      <h2><strong> About Baycro </strong></h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- Main Content -->
+<section id="maincontent">
+  <div class="container">
+    <h3>About</h3>
+    <p> Corona Check serves as a platform for the public that would allow individuals affected by the virus
+      to upload their location data and members of the community to compare their own location to verify whether
+      they have potentially been exposed to the virus. The user who has been positively tested with COVID-19 uploads
+      their data, inputting the range in which they were sick and had symptoms. The web application would then display
+      this location data on a map; in order to protect the privacy of the user, the application allows them to erase
+      areas they want to hide, such as their home address. Once the user is satisfied with their privacy, they enter
+      the upload button. Their data then gets put into a MySQL database. Anonymous users can then acquire their own
+      location history from google and load it into the website. The application will then check if they were in a nearby
+      radius of someone who has COVID-19. After their location history is compared, any intersection between the intereste
+      d member and a user infected with the virus will be shown with a marker dot, indicating how far the affected member
+      was in the infection cycle. In order to maintain user privacy, individual metrics will not be shown. If the interested
+      member learns that they have been exposed to the virus, they have an option to upload their data as well and can view
+      other pages of the website which inform what next steps to take, whether it be self-isolation or testing.</p>
+    <br>
+  </div>
+</section>
+<br>
+<br>
+<section>
+  <div class="container">
+    <h3>Our Team</h3>
+
+    <div class="row">
+
+      <div class="span3 offset1">
+        <div class="team">
+          <img class="img-circle" src="img/team/ganesh.jpg" alt="" />
+          <h4>Ganesh Pimpale</h4>
+        </div>
+      </div>
+
+      <div class="span3">
+        <div class="team">
+          <img src="img/team/govind.jpg" alt="" />
+          <h4>Govind Pimpale</h4>
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
+  </div>
+</section>
 
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footerlogo">
+      <p style="padding-top: 10px;"><a href="about.html" style="color: inherit;">About</a></p>
+      <p><a href="faq.html" style="color: inherit;">Frequently Asked Questions</a></p>
+      <p style="color: inherit; margin-bottom:-50px">Attributed to © Innexgo LLC, All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
 
 </body>
-
 </html>
