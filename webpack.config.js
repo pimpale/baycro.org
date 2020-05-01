@@ -2,6 +2,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
   entry: './src/app.js',
@@ -15,30 +16,30 @@ const config = {
         test: /\.pug$/,
         use: ['html-loader?attributes=false', 'pug-html-loader']
       },
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|jpg|jpeg|gif)$/i,
-        use: ['file-loader']
-      }
     ]
   },
   plugins: [
-//    '3dprinting',
-//    'about',
-//    'donate',
-//    'faq',
-//    'gallery',
-    'index',
-//    'join',
-//    'news',
-//    'sponsors'
-  ].map((n) => new HtmlWebpackPlugin({
-    filename: `${n}.html`,
-    template: `src/${n}.pug`,
-    inject: false
-  }))
+    new CopyWebpackPlugin([
+      {from: 'src/vendor', to: 'vendor'},
+      {from: 'src/img', to: 'img'},
+      {from: 'src/css', to: 'css'},
+      {from: 'src/js', to: 'js'},
+    ]),
+    [
+      //    '3dprinting',
+      'about',
+      //    'donate',
+      'faq',
+      //    'gallery',
+      'index',
+      //    'join',
+      //    'news',
+      //    'sponsors'
+    ].map((n) => new HtmlWebpackPlugin({
+      filename: `${n}.html`,
+      template: `src/${n}.pug`,
+      inject: false
+    }))
+  ].flat()
 };
 module.exports = config;
