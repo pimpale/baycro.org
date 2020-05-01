@@ -1,0 +1,27 @@
+{
+  "name": "baycro.org",
+  "version": "1.0.0",
+  "description": "Source for baycro.org",
+  "main": "app.js",
+  "scripts": {
+    "dev": "webpack --watch --mode development",
+    "prod": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pimpale/baycro.org.git"
+  },
+  "author": "Govind Pimpale and Ganesh Pimpale",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/pimpale/baycro.org/issues"
+  },
+  "homepage": "https://github.com/pimpale/baycro.org#readme",
+  "devDependencies": {
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "pug-html-loader": "^1.1.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

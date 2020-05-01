@@ -1,0 +1,56 @@
+//- layout.pug
+doctype html
+html
+  head
+    title BAYCRO
+
+    // Fonts
+    link(href='https://fonts.googleapis.com/css?family=Exo&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Ubuntu&display=swap' rel='stylesheet')
+
+    // CSS References
+    link(rel='stylesheet' href='vendor/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet' href='vendor/bootstrap/css/bootstrap-responsive.css')
+    link(rel='stylesheet' href='vendor/fontawesome-free/css/all.min.css')
+    link(rel='stylesheet' href='vendor/fontawesome-free/css/fontawesome.min.css')
+    link(rel='stylesheet' href='css/headerfix.css')
+    link(rel='stylesheet' href='css/homepage.css')
+
+    // JS Files
+    script(src='vendor/jquery/jquery.js')
+    script(src='vendor/jquery/jquery.slim.min.js')
+    script(src='vendor/bootstrap/js/bootstrap.js')
+    script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+    script(src='vendor/jquery/jquery-hover-effect.js')
+    script(src='vendor/jquery/jquery.ui.totop.js')
+    script(src='js/homepage.js')
+
+    // Favicon
+    link(rel='icon' href='img/baycro_logo.jpg' type='image/jpg')
+  body
+    header.header
+        nav.navbar.navbar-expand-lg.fixed-top.py-3
+          .container
+            a.navbar-brand.font-weight-bold.text-white(href='index.html') Baycro
+            button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarSupportedContent')
+              i.fa.fa-bars
+            #navbarSupportedContent.collapse.navbar-collapse
+              .navbar-nav.ml-auto
+                a.nav-item.nav-link.font-weight-bold(href='news.html') News
+                a.nav-item.nav-link.font-weight-bold(href='donate.html') Donate
+                a.nav-item.nav-link.font-weight-bold(href='3dPrinting.html') 3D Printing
+                a.nav-item.nav-link.font-weight-bold(href='join.html') Join
+                a.nav-item.nav-link.font-weight-bold(href='sponsors.html') Sponsors
+                a.nav-item.nav-link.font-weight-bold(href='gallery.html') Gallery
+                a.nav-item.nav-link.font-weight-bold(href='faq.html') FAQ
+                a.nav-item.nav-link.font-weight-bold(href='about.html') About
+    // This is where the good stuff goes
+    block content
+    footer.footer
+      .container
+        .footerlogo
+          p(style='padding-top: 10px;')
+            a(href='about.html' style='color: white;') About
+          p
+            a(href='faq.html' style='color: white;') Frequently Asked Questions
+          p(style='color: inherit;; margin-bottom:-50px') Attributed to &copy; Innexgo LLC, All Rights Reserved.
