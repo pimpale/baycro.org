@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/pimpale/baycro.org#readme",
   "devDependencies": {
+    "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "pug-html-loader": "^1.1.5",

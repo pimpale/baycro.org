@@ -2,10 +2,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const pug = {
-  test: /\.pug$/,
-  use: ['html-loader?attributes=false', 'pug-html-loader']
-};
+
 const config = {
   entry: './app.js',
   output: {
@@ -13,22 +10,35 @@ const config = {
     filename: '[name].bundle.js'
   },
   module: {
-    rules: [pug]
+    rules: [
+      {
+        test: /\.pug$/,
+        use: ['html-loader?attributes=false', 'pug-html-loader']
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        use: ['file-loader']
+      }
+    ]
   },
   plugins: [
-    '3dprinting',
-    'about',
-    'donate',
-    'faq',
-    'gallery',
+//    '3dprinting',
+//    'about',
+//    'donate',
+//    'faq',
+//    'gallery',
     'index',
-    'join',
-    'news',
-    'sponsors'
+//    'join',
+//    'news',
+//    'sponsors'
   ].map((n) => new HtmlWebpackPlugin({
-      filename: `${n}.html`,
-      template: `src/${n}.pug`,
-      inject: false
-    }))
+    filename: `${n}.html`,
+    template: `src/${n}.pug`,
+    inject: false
+  }))
 };
 module.exports = config;

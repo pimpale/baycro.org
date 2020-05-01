@@ -90,10 +90,11 @@
 /*!****************!*\
   !*** ./app.js ***!
   \****************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./app.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"31d6cfe0d16ae931b73c59d7e0c089c0.js\");\n\n//# sourceURL=webpack:///./app.js?");
 
 /***/ })
 
