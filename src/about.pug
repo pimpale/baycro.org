@@ -18,20 +18,16 @@ block content
   section
     .container.text-center
       h2 Our Team
-
+      mixin TeamMember(img, name, school)
+        .span
+          .team.mx-3
+            img.rounded-circle(src=img)
+            h6= name
+            p= school
       mixin Photo(name, school)
-        .span
-          .team.mx-3
-            img.rounded-circle(src=`img/team/${name.split(' ').join('')}.png`)
-            h6= name
-            p= school
-
+        +TeamMember(`img/team/${name.split(' ').join('')}.png`, name, school)
       mixin NoPhoto(name, school)
-        .span
-          .team.mx-3
-            img.rounded-circle(src='img/team/PersonIcon.png')
-            h6= name
-            p= school
+        +TeamMember('img/team/PersonIcon.png', name, school)
 
       .row
         +Photo('Esther Tok', 'Gunn High School')
