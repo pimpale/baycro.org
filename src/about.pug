@@ -13,111 +13,57 @@ block content
     .container
       h3 About
       p
-      br
   br
   br
-  // Name Order
-  // Leadership
-  // Ajay Bati, Isaiah Chung, Dheerj Jasuja, Christopher Park
-  // Emily Park, Ganesh Pimpale, Govind Pimpale, Esther Tok
-  // Members
-  // Arash Amiri, Vibhav Athreya, Kaitlyn Bui, Riddhi Kulkarni
-  // Karankumar Mageswaran, Adithya Nair, Jasper Nguyen, Leslie Sun
-  // Shreya Thayaparan, Emily Zhao
-  //
-    HEY GOVIND: ALL OF THESE NEED TO BE CENTERED AND HAVE ROUND IMAGES
-    GET THAT DONE!!!
   section
     .container
       h3 Our Team
+
+      mixin Photo(name, school)
+        .team
+          img.img-circle(src=`img/team/${name.split(' ').join('')}.png`)
+          h6= name
+          p= school
+
+      mixin NoPhoto(name, school)
+        .team
+          img.img-circle(src='img/team/PersonIcon.png')
+          h6= name
+          p= school
+
       .row
         .span4.offset2
-          .team
-            .img.img-circle(src="img/team/EstherTok.png")
-              h4 Esther Tok
-              p Gunn High School
+          +Photo('Esther Tok', 'Gunn High School')
         .span4
-          .team
-            .img.img-circle(src="img/team/EmilyZhao.png")
-              h4 Emily Zhao
-              p Gunn High School
+          +Photo('Emily Zhao', 'Gunn High School')
         .span4
-          .team
-            .img.img-circle(src="img/team/RidaKhawaja.png")
-              h4 Rida Khawaja
-              p Gunn High School
+          +Photo('Rida Khawaja', 'Gunn High School')
+        .span4
+          +Photo('Shreya Thayaparan', 'Leland High School')
       .row
         .span4.offset2
-          .team
-            .img.img-circle(src="img/team/ShreyaThayaparan.png")
-              h4 Shreya Thayaparan
-              p Leland High School
+          +Photo('Ajay Bati', 'Mission San Jose High School')
         .span4
-          .team
-            .img.img-circle(src="img/team/AjayBati.png")
-              h4 Ajay Bati
-              p Mission San Jose High School
+          +Photo('Vibhav Athreya', 'Mission San Jose High School')
         .span4
-          .team
-            .img.img-circle(src="img/team/VibhavAthreya.png")
-              h4 Vibhav Athreya
-              p Mission San Jose High School
+          +Photo('Karankumar Mageswaran', 'Mission San Jose High School')
         .span4
-          .team
-            .img.img-circle(src="img/team/KarankumarMageswaran.png")
-              h4 Karankumar Mageswaran
-              p Mission San Jose High School
+          +Photo('Emily Park', 'Oak Grove High School')
       .row
+        .span4.offset2
+          +Photo('Ganesh Pimpale', 'Santa Teresa High School')
         .span4
-          .team
-            .img.img-circle(src="img/team/EmilyPark.png")
-              h4 Emily Park
-              p Oak Grove High School
+          +Photo('Govind Pimpale', 'Santa Teresa High School')
+        .span4
+          +Photo('Jasper Nguyen', 'Santa Teresa High School')
+        .span4
+          +Photo('Kaitlyn Bui', 'Santa Teresa High School')
       .row
+        .span4.offset2
+          +Photo('Leslie Sun', 'Saratoga High School')
         .span4
-          .team
-            .img.img-circle(src="img/team/GaneshPimpale.png")
-              h4 Ganesh Pimpale
-              p Santa Teresa High School
-      .row
+          +Photo('Isaiah Chung', 'Saratoga High School')
         .span4
-          .team
-            .img.img-circle(src="img/team/GovindPimpale.png")
-              h4 Govind Pimpale
-              p Santa Teresa High School
-      .row
+          +Photo('Adithya Nair', 'Saratoga High School')
         .span4
-          .team
-            .img.img-circle(src="img/team/JasperNguyen.png")
-              h4 Jasper Nguyen
-              p Santa Teresa High School
-      .row
-        .span4
-          .team
-            .img.img-circle(src="img/team/KaitlynBui.png")
-              h4 Kaitlyn Bui
-              p Santa Teresa High School
-      .row
-        .span4
-          .team
-            .img.img-circle(src="img/team/LeslieSun.png")
-              h4 Leslie Sun
-              p Saratoga High School
-      .row
-        .span4
-          .team
-            .img.img-circle(src="img/team/IsaiahChung.png")
-              h4 Isaiah Chung
-              p Saratoga High School
-      .row
-        .span4
-          .team
-            .img.img-circle(src="img/team/AdithyaNair.png")
-              h4 Adithya Nair
-              p Saratoga High School
-      .row
-        .span4
-          .team
-            .img.img-circle(src="img/team/ChristopherPark.png")
-              h4 Christopher Park
-              p University Preparatory Academy
+          +Photo('Christopher Park', 'University Preparatory Academy')
