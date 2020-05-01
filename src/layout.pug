@@ -21,6 +21,14 @@ html
     // JS Files
     script(src='main.bundle.js')
 
+    script(src='vendor/jquery/jquery.js')
+    script(src='vendor/jquery/jquery.slim.min.js')
+    script(src='vendor/bootstrap/js/bootstrap.js')
+    script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+    script(src='vendor/jquery/jquery-hover-effect.js')
+    script(src='vendor/jquery/jquery.ui.totop.js')
+    script(src='js/homepage.js')
+
     // Favicon
     link(rel='icon' href='img/baycro_logo.jpg' type='image/jpg')
   body
@@ -46,7 +54,7 @@ html
       .container
         .footerlogo
           p(style='padding-top: 10px;')
-            a(href='about.html' style='color: white;') About
+            a.text-light(href='about.html') About
           p
-            a(href='faq.html' style='color: white;') Frequently Asked Questions
-          p(style='color: inherit;; margin-bottom:-50px') Attributed to &copy; Innexgo LLC, All Rights Reserved.
+            a.text-light(href='faq.html') Frequently Asked Questions
+          p.text-light(style='margin-bottom:-50px') Attributed to &copy; Innexgo LLC, All Rights Reserved.
