@@ -26,15 +26,14 @@ const config = {
       {from: 'src/js', to: 'js'},
     ]),
     [
-      //    '3dprinting',
+      '3d_printing',
       'about',
-      //    'donate',
+      'donate',
       'faq',
-      //    'gallery',
       'index',
-      //    'join',
-      //    'news',
-      //    'sponsors'
+      'join',
+      'news',
+      'sponsors'
     ].map((n) => new HtmlWebpackPlugin({
       filename: `${n}.html`,
       template: `src/${n}.pug`,
