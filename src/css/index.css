@@ -14,14 +14,26 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/homepage-bg.png");
 }
 
-#block-section {
+#sponsor-section {
+  display: flex;
+  align-items:center;
   z-index:1000;
   margin-top:0px;
   padding:20px 0 0 0;
+  height: 50vh;
+}
+
+#donate-section {
+  display: flex;
+  z-index:1000;
+  align-items:center;
+  margin-top:0px;
+  padding:20px 0 0 0;
+  height: 50vh;
 }
 
 #news-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/homepage-bg.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/news/1-1.png");
 }
 
 #print-section {
@@ -30,8 +42,4 @@
 
 #join-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/join.png");
-}
-
-#news-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/3d_printing.png");
 }
