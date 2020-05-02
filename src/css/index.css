@@ -10,6 +10,20 @@
   width: 100vw;
 }
 
+
+.btn {
+  background-color: rgba(147, 112, 219, 0.8);
+  border: 0px solid white;
+  border-radius: 20px;
+  color: #fff;
+  display: block;
+  font-size: 1.5em;
+  margin-top: 50px;
+  padding: 1em;
+  text-decoration: none;
+  width: 200px;
+}
+
 #hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/homepage-bg.png");
 }
