@@ -17,3 +17,11 @@
 #news-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/3d_printing.png");
 }
+
+#join-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/join.png");
+}
+
+#news-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/3d_printing.png");
+}
