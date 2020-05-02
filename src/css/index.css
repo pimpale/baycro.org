@@ -14,7 +14,17 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/homepage-bg.png");
 }
 
+#about-section {
+  z-index:1000;
+  margin-top:0px;
+  padding:20px 0 0 0;
+}
+
 #news-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/homepage-bg.png");
+}
+
+#print-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/3d_printing.png");
 }
 
