@@ -10,93 +10,26 @@ block content
       br
       br
       h2(style='color:inherit;') Bay Area Coronavirus Relief Organization
-      h4(style='color:inherit;').text-center
-        | We are a coalition of students from different schools from all around the Bay Area working to donate to
-        | people both on the front lines and in dire need.
-
+      h3(style='color:inherit;').text-align
+        | We are a coalition of students from many different schools from all around the Bay Area working to collect
+        | donations to help people both on the front lines and those in dire need.
   section#news-section.image-section
     .container
-      .row
-        .span
-          .features
-            .icon
-              i.fas.fa-thumbs-up.icon-bg-dark.icon-circled.icon-5x
-            .features_content
-              h2 Easy to Use
-              p
-                | Allows individuals affected by the virus to upload their location data and members of the community to
-                | compare their own location to verify whether they have potentially been exposed to the virus.
+      h2(style='color:inherit;') Baycro is Now Collecting 3D Printed Supplies
+        h4(style='color:inherit;')
+          | Now that we have acquired the necessary equipment to work with such items, we have expanded our collection
+          | of donations to 3D printed personal protective equipment.
+  section#donate-section.block-section
+    .container
+
+  section#print-section.image-section
+    .container
+      h2(style='color:inherit;') 3D Printing
+        h4(style='color:inherit;')
+          |
   section#join-section.image-section
     .container
-      .row
-        .span
-          .features
-            .icon
-              i.fas.fa-thumbs-up.icon-bg-dark.icon-circled.icon-5x
-            .features_content
-              h2 Easy to Use
-              p
-                | Allows individuals affected by the virus to upload their location data and members of the community to
-                | compare their own location to verify whether they have potentially been exposed to the virus.
-  section#maincontent
+
+  section#sponser-section.block-section
     .container
-      .row
-        .span
-          .features
-            .icon
-              i.fas.fa-thumbs-up.icon-bg-dark.icon-circled.icon-5x
-            .features_content
-              h2 Easy to Use
-              p
-                | Allows individuals affected by the virus to upload their location data and members of the community to
-                | compare their own location to verify whether they have potentially been exposed to the virus.
-        .span
-          .features
-            .icon
-              i.fas.fa-shield-alt.icon-bg-dark.icon-circled.icon-5x
-            .features_content
-              h2 User Privacy
-              p
-                | Checking your exposure to Covid-19 does not require you make an account and all personal data is kept
-                | completely anonymous and any sensitive data can be removed with the tools this website provides.
-        .span
-          .features
-            .icon
-              i.fas.fa-chart-line.icon-bg-dark.icon-circled.icon-5x
-            .features_content
-              h2 Detailed Reporting
-              p
-                | Provides a detailed log of possible exposures, taking into account time and location. In addition,
-                | this tool allows you to view locations which have a high rate of Covid-19 exposure.
-      .row
-        .span12
-          .solid_line
-      .row
-        h2(style='margin-bottom: 50px;') Our Strategy
-        .card-deck
-          .card
-            .card-body
-              h5.card-title Data Collection
-              p.card-text
-                | First, you download location history data from
-                a(href='https://takeout.google.com/settings/takeout') Google Takeout
-                | . Assuming you haven&apos;t disabled this feature, this file will contain your entire location history 
-                | since you started your account. As such, it can be rather large. Unzip the file and upload
-                code Location History.json
-                | .
-          .card
-            .card-body
-              h5.card-title Data Processing
-              p.card-text
-                | If data is uploaded to our server, we anonymize it to preserve user privacy, and then
-                | store it in a MySQL database. We use an Octree with latitude, longitude, and time as the three
-                | dimensions in order to detect collisions.
-          .card
-            .card-body
-              h5.card-title Data Analysis
-              p.card-text
-                | Most data analysis is done client side. Your location history is compared with the
-                | location history of people who may have coronavirus, and you will be able to explore locations where you
-                | may have been exposed. We use
-                a(href='https://www.openstreetmap.org') OpenStreetMap
-                |  to graphically visualize results.
+
