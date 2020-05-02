@@ -1,0 +1,19 @@
+.image-section {
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  height: 50vh;
+  width: 100vw;
+}
+
+#hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/homepage-bg.png");
+}
+
+#news-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/3d_printing.png");
+}

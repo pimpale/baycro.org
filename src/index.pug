@@ -1,12 +1,26 @@
 extends layout
 block extrascripts
     link(rel='stylesheet' href='css/headerfix.css')
+    link(rel='stylesheet' href='css/index.css')
 
 block content
-  section.hero
+  section#hero-section.hero
     .hero-inner
       img.w-50(src='img/baycro_logo.png')
       h1 Bay Area Coronavirus Relief Organization
+  section#news-section.image-section
+    .container
+      .row
+        .span
+          .features
+            .icon
+              i.fas.fa-thumbs-up.icon-bg-dark.icon-circled.icon-5x
+            .features_content
+              h2 Easy to Use
+              p
+                | Allows individuals affected by the virus to upload their location data and members of the community to
+                | compare their own location to verify whether they have potentially been exposed to the virus.
+    
   section#maincontent
     .container
       .row
@@ -47,10 +61,10 @@ block content
             .card-body
               h5.card-title Data Collection
               p.card-text
-                | First, you download location history data from 
+                | First, you download location history data from
                 a(href='https://takeout.google.com/settings/takeout') Google Takeout
                 | . Assuming you haven&apos;t disabled this feature, this file will contain your entire location history 
-                | since you started your account. As such, it can be rather large. Unzip the file and upload 
+                | since you started your account. As such, it can be rather large. Unzip the file and upload
                 code Location History.json
                 | .
           .card
@@ -66,6 +80,24 @@ block content
               p.card-text
                 | Most data analysis is done client side. Your location history is compared with the
                 | location history of people who may have coronavirus, and you will be able to explore locations where you
-                | may have been exposed. We use 
+                | may have been exposed. We use
                 a(href='https://www.openstreetmap.org') OpenStreetMap
                 |  to graphically visualize results.
+      .row.no-gutters
+        .col-lg-6.order-lg-2.text-white.showcase-img
+        .col-lg-6.order-lg-1.my-auto.showcase-text
+          h2 In-Depth Attendance Profiles
+          p.lead.mb-0
+            | Analyzes attendance data to identify unhealthy truancy patterns and solve attendance issues with students and parents before they escalate.
+      .row.no-gutters
+        .col-lg-6.text-white.showcase-img(style="background-image: url('img/homepage/join.png');")
+        .col-lg-6.my-auto.showcase-text
+          h2 Quick and Effective Scanning
+          p.lead.mb-0
+            | Intuitive and quick scanning system allows students to sign in and out of class in seconds by scanning their ID cards.
+      .row.no-gutters
+        .col-lg-6.order-lg-2.text-white.showcase-img(style="background-image: url('img/pic1.png');")
+        .col-lg-6.order-lg-1.my-auto.showcase-text
+          h2 Extensive Attendance Logging
+          p.lead.mb-0
+            | Comprehensive details on student whereabouts to improve campus safety and decrease truancy. All data for classroom interruptions like bathroom breaks is stored and can be quantitatively analyzed.
