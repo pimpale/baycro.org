@@ -31,9 +31,9 @@ block content
             h6= name
             p= school
       mixin Photo(name, school)
-        +TeamMember(`img/team/${name.split(' ').join('')}.png`, name, school)
+        +TeamMember(`img/team/${name.split(' ').join('')}.webp`, name, school)
       mixin NoPhoto(name, school)
-        +TeamMember('img/team/PersonIcon.png', name, school)
+        +TeamMember('img/team/PersonIcon.webp', name, school)
 
       .row
         +Photo('Esther Tok', 'Gunn High School')
