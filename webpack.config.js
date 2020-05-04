@@ -24,6 +24,7 @@ const config = {
       {from: 'src/img', to: 'img'},
       {from: 'src/css', to: 'css'},
       {from: 'src/js', to: 'js'},
+      {from: 'src/CNAME', to: 'CNAME'},
     ]),
     [
       '3d_printing',
