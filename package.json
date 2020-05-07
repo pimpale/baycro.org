@@ -2,7 +2,7 @@
   "name": "baycro.org",
   "version": "1.0.0",
   "description": "Source for baycro.org",
-  "main": "app.js",
+  "main": "./src/app.js",
   "scripts": {
     "dev": "webpack --watch --mode development",
     "prod": "webpack --mode production"

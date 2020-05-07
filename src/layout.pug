@@ -4,7 +4,7 @@ html
   head
     meta(charset='UTF-8')
 
-    title BAYCRO
+    title Baycro
 
     // CSS References
     link(rel='stylesheet' href='vendor/fonts-googleapis/exo.css')
@@ -48,13 +48,15 @@ html
                 a.nav-item.nav-link.font-weight-bold(href='about.html') About
 
     // This is where the good stuff goes
-    block content
+    .content
+      block content
 
     footer.footer
-      .container
+      .container-fluid.py-1
         .footerlogo
-          p(style='padding-top: 10px;')
+          br
+          p
             a.text-light(href='about.html') About
           p
             a.text-light(href='faq.html') Frequently Asked Questions
-          p.text-light(style='margin-bottom:-50px') &copy; Govind Pimpale & Ganesh Pimpale
+          p.text-light &copy; Govind Pimpale & Ganesh Pimpale
