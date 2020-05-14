@@ -1,0 +1,59 @@
+.image-section {
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  min-height: 50vh;
+  width: 100vw;
+  padding-top:5vh;
+  padding-bottom:5vh;
+}
+
+.text-section {
+  display: flex;
+  align-items:center;
+  z-index:1000;
+  margin-top:0px;
+  padding-top:5vh;
+  padding-bottom:5vh;
+  min-height: 50vh;
+}
+
+.btn {
+  background-color: rgba(147, 112, 219, 0.8);
+  border: 0px solid white;
+  border-radius: 20px;
+  color: #fff;
+  display: block;
+  font-size: 1.5em;
+  margin-top: 50px;
+  padding: 1em;
+  text-decoration: none;
+  width: 200px;
+}
+
+#hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)), url("../img/homepage/homepage-bg.webp");
+}
+
+#news-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/news/2-1.webp");
+}
+
+#print-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/3d_printing.webp");
+}
+
+#join-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.3)), url("../img/homepage/join.webp");
+}
+
+#end-section {
+  display: flex;
+  z-index:1000;
+  margin-top:0px;
+  padding: 1px 0 0 0;
+}
